@@ -87,16 +87,21 @@ p {
 .dark-theme .form-input,
 .dark-theme .form-select,
 .dark-theme .form-textarea {
+  background-color:var(--dark) ;
+  color: var(--light);
+  border-color: var(--gray);
   /* TODO: Add dark theme form control styles */
   /* HINT: Use background-color, color, and border-color */
 }
 
 .dark-theme .table th {
+  background-color: var(--gray);
   /* TODO: Add dark theme table header styles */
   /* HINT: Use background-color */
 }
 
 .dark-theme .code-editor {
+  background-color: var(--dark);
   /* TODO: Add dark theme code editor styles */
   /* HINT: Use background-color */
 }
