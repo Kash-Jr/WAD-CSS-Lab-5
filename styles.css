@@ -305,101 +305,127 @@ input:checked + .slider-round:before {
 
 /* List Styles */
 .list {
-  /* TODO: Add list styles */
-  /* HINT: Use list-style-type, background-color, border-radius, overflow, and box-shadow */
+  list-style-type: none;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
 }
 
 .list-item {
-  /* TODO: Add list item styles */
-  /* HINT: Use padding, border-bottom, display, align-items, cursor, and transition */
+  padding: 20px;
+  border-bottom: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .list-item:last-child {
-  /* TODO: Add styles for last list item */
-  /* HINT: Remove border-bottom */
+  border-bottom: none;
 }
 
 .list-item:hover {
-  /* TODO: Add hover styles for list items */
-  /* HINT: Change background-color */
+  background-color: var(--light-gray);
 }
 
 .list-item i {
-  /* TODO: Add icon styles in list items */
-  /* HINT: Use margin-right and color */
+  margin-right: 30px;
+  color: var(--primary);
 }
 
 .list-item .avatar {
-  /* TODO: Add avatar styles in list items */
-  /* HINT: Use width, height, border-radius, margin-right, and object-fit */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
 }
 
 /* Form Styles */
 .form-group {
-  /* TODO: Add form group styles */
-  /* HINT: Add margin-bottom */
+  margin-bottom: 20px;
 }
 
 .form-label {
-  /* TODO: Add form label styles */
-  /* HINT: Use display, margin, and font-weight */
+  display: block;
+  margin-bottom: 5px; 
+  font-weight: bold;
 }
 
 .form-input {
-  /* TODO: Add form input styles */
-  /* HINT: Use width, padding, border, border-radius, font-size, transition */
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 16px;
+  transition: var(--transition);
 }
 
 .form-input:focus {
-  /* TODO: Add focus styles for form inputs */
-  /* HINT: Use outline, border-color, and box-shadow */
+  outline: none; 
+  border-color: var(--primary);
+  box-shadow: 0 0 5px rgba(43, 125, 231, 0.363);
 }
 
 .form-select {
-  /* TODO: Add form select styles */
-  /* HINT: Similar to form-input, with additional background-color */
+  width: 100%; 
+  padding: 15px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--white);
+  font-size: 16px;
+  transition: var(--transition);
 }
 
 .form-textarea {
-  /* TODO: Add textarea styles */
-  /* HINT: Similar to form-input, with additional min-height and resize properties */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px; 
+  font-size: 16px;
+  min-height: 100px;
+  resize: vertical;
+  transition: var(--transition);
 }
 
 /* Table Styles */
 .table-container {
-  /* TODO: Add table container styles */
-  /* HINT: Use overflow-x and margin */
+  overflow-x: auto;
+  margin-bottom: 25px;
 }
 
 .table {
-  /* TODO: Add table styles */
-  /* HINT: Use width, border-collapse, border-spacing */
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .table th,
 .table td {
-  /* TODO: Add table cell styles */
-  /* HINT: Use padding, text-align, border-bottom */
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--border-color);
 }
 
 .table th {
-  /* TODO: Add table header styles */
-  /* HINT: Use background-color, font-weight, cursor */
+  background-color: var(--light-gray);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .table th:hover {
-  /* TODO: Add hover styles for table headers */
-  /* HINT: Change background-color */
+  background-color: var(--gray);
 }
 
 .table tr {
-  /* TODO: Add table row styles */
-  /* HINT: Use transition */
+  transition: var(--transition);
 }
 
 .table tr:hover {
-  /* TODO: Add hover styles for table rows */
-  /* HINT: Change background-color with rgba for transparency */
+  background-color: rgba(67, 97, 238, 0.1);
 }
 
 /* Badge Styles */
