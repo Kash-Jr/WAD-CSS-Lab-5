@@ -261,33 +261,46 @@ p {
 }
 
 .switch {
-  /* TODO: Add switch styles */
-  /* HINT: Use position, display, width, height, and margin-right */
+  position:relative;
+  display:grid;
+  width: 20px;
+  height: 25px;
+  margin-right: 40px;
 }
 
 .switch input {
-  /* TODO: Add switch input styles */
-  /* HINT: Use opacity, width, and height */
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider-round {
-  /* TODO: Add slider round styles */
-  /* HINT: Use position, cursor, top/left/right/bottom properties, background-color, transition, and border-radius */
+  position: absolute;
+  cursor: pointer;
+  top: 5px; left: -10px; right: -10px; bottom: 0;
+  background-color: var(--gray);
+  transition: var(--transition); 
+  border-radius: 25px;
 }
 
 .slider-round:before {
-  /* TODO: Add slider round before element styles */
-  /* HINT: Use position, content, height, width, left, bottom, background-color, transition, and border-radius */
+  position: absolute; 
+  content: ""; 
+  height: 15px; 
+  width: 15px;
+  left: 3px; 
+  bottom: 2.5px; 
+  background-color: var(--white); 
+  transition: var(--transition); 
+  border-radius: 50%;
 }
 
 input:checked + .slider-round {
-  /* TODO: Add checked slider round styles */
-  /* HINT: Change background-color */
+  background-color: var(--primary);
 }
 
 input:checked + .slider-round:before {
-  /* TODO: Add checked slider round before element styles */
-  /* HINT: Use transform with translateX */
+  transform:translateX(20px);
 }
 
 /* List Styles */
