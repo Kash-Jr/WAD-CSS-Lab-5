@@ -192,55 +192,72 @@ p {
 }
 
 .chip {
-  /* TODO: Add chip styles */
-  /* HINT: Use display, align-items, padding, background-color, border-radius, font-size, color, and cursor */
+  display: grid;
+  align-items: center;
+  padding: 20px;
+  background-color:rgb(162, 195, 255);
+  border-radius: 25px;
+  font-size: 16px;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
 .chip.active {
-  /* TODO: Add active chip styles */
-  /* HINT: Change background-color and color */
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .chip i {
-  /* TODO: Add icon styles within chips */
-  /* HINT: Use margin-right */
+  margin-right: 5px;
 }
 
 .chip .close {
-  /* TODO: Add close button styles within chips */
-  /* HINT: Use margin-left, cursor, and font-weight */
+  margin-left: 10px;
+  cursor: grab;
+  font-weight: bolder;
+  color: #f72525;
 }
 
 /* Slider Styles */
 .slider-container {
-  /* TODO: Add slider container styles */
-  /* HINT: Use margin */
+  margin-bottom: 20px;
 }
 
 .slider {
-  /* TODO: Add slider styles */
-  /* HINT: Use appearance, width, height, border-radius, background, and outline */
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: var(--light-gray);
+  outline: none;
 }
 
 .slider::-webkit-slider-thumb {
-  /* TODO: Add slider thumb styles */
-  /* HINT: Use appearance, width, height, border-radius, background, cursor, and transition */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .slider::-webkit-slider-thumb:hover {
-  /* TODO: Add hover styles for slider thumb */
-  /* HINT: Use background and transform */
+  background: var(--secondary);
+  transform: scale(1.5);
 }
 
 .slider-value {
-  /* TODO: Add slider value styles */
-  /* HINT: Use text-align, font-weight, and color */
+  text-align: right;
+  font-weight: bold; 
+  color: var(--primary);
 }
 
 /* Switch Styles */
 .switch-container {
-  /* TODO: Add switch container styles */
-  /* HINT: Use display, align-items, and margin */
+  display: flex;
+  align-items: center; 
+  margin-bottom: 15px;
 }
 
 .switch {
