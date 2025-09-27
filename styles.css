@@ -103,14 +103,14 @@ p {
 /* Card Styles */
 .card {
   background-color: var(--body-bg);
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: var(--card-shadow);
   transition: var(--transition);
 }
 
 .card:hover {
-  box-shadow: 10px, 10px, 5px, var(--gray);
-  transform: translateY(-5px);
+  box-shadow: 20px, 20px, var(--dark);
+  transform: translateY(-7px);
 }
 
 .card-img {
@@ -124,63 +124,71 @@ p {
 }
 
 .card-title {
-  font-size: 16px ;
-  margin-bottom: 15px;
+  font-size: 18px ;
+  margin-bottom: 10px;
   color: var(--text-color);
 }
 
 .card-text {
   color: var(--gray);
   margin-bottom: 15px;
-  /* TODO: Add card text styles */
-  /* HINT: Set color and margin */
 }
 
 /* Button Styles */
 .btn {
-  /* TODO: Add button styles */
-  /* HINT: Use display, padding, background-color, color, border, border-radius, cursor, transition */
+  display:inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--white);
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:var(--transition);
+  cursor: grab;
+
 }
 
 .btn:hover {
-  /* TODO: Add button hover styles */
-  /* HINT: Change background-color */
+  background-color: var(--secondary);
 }
 
 .btn-success {
-  /* TODO: Add success button styles */
-  /* HINT: Change background-color */
+  background-color: var(--success);
 }
 
 .btn-warning {
-  /* TODO: Add warning button styles */
-  /* HINT: Change background-color */
+  background-color: var(--warning);
 }
 
 .btn-info {
-  /* TODO: Add info button styles */
-  /* HINT: Change background-color */
+  background-color: var(--info);
 }
 
 .btn-outline {
-  /* TODO: Add outline button styles */
-  /* HINT: Transparent background with border and specific text color */
+  background: transparent;
+  border: 2px, solid var(--primary);
+  color: var(--primary);
 }
 
 .btn-outline:hover {
-  /* TODO: Add hover styles for outline button */
-  /* HINT: Change background-color and text color */
+  transform:translateY(-5px);
+  background-color: var(--gray);
+  color: var(--white);
 }
 
 .btn-group {
-  /* TODO: Add button group styles */
-  /* HINT: Use display and gap */
+  display:flex;
+  gap: 10px;
+  padding: 5px;
 }
 
 /* Chip Styles */
 .chips-container {
-  /* TODO: Add chips container styles */
-  /* HINT: Use display, flex-wrap, gap, and margin */
+  display:flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 .chip {
